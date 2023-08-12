@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 115, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+    text-align: center;
+    margin: auto;
+
+    flex-wrap: wrap;
+}
+
+.title {
+    color: white;
+    font-size: 3rem;
+}
+
+.quote-title {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.quote-title::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(255, 115, 0);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-container {
+    background-color: white;
+    /* min-height: 350px; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    box-shadow: 0 12px 18px rgb(35, 34, 34);
+    min-width: 700px;
+    justify-content: center;
+    position: relative;
+
+}
+
+.quote {
+    font-size: 1.5rem;
+    color: rgb(70, 70, 70);
+    /* display: none; */
+
+}
+
+.quot-marks {
+    font-size: 4rem;
+    /* display: none; */
+    display: inline;
+}
+
+.quoter {
+    font-size: 1.5rem;
+    color: rgb(255, 115, 0);
+    text-transform: uppercase;
+    font-family: monospace;
+    letter-spacing: 4px;
+    /* display: none; */
+    position: relative;
+    left: 30%;
+
+
+}
+
+.hyphen {
+    color: black;
+}
+
+.button {
+    border: none;
+    background-color: rgb(29, 29, 29);
+    padding: .5rem;
+    color: white;
+    border-radius: 5px;
+    transition: all ease-in-out 100ms;
+    font-size: 1.2rem;
+    /* display: none; */
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(71, 66, 66);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 18px rgb(35, 34, 34);
+    /* scale: 1.05; */
+}
+
+.block {
+    display: block;
+}
+
+.button:active {
+    scale: .95;
+}
+
+.loading {
+    font-size: 3rem;
+}

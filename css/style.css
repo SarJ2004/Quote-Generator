@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -19,7 +19,17 @@ body {
     text-align: center;
     margin: auto;
 
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    width: 1000px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    text-align: center;
+
+
 }
 
 .title {
@@ -48,6 +58,8 @@ body {
 .quote-container {
     background-color: white;
     /* min-height: 350px; */
+    /* height: 500px;
+    width: 800px; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
